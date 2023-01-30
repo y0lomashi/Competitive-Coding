@@ -10,7 +10,7 @@ int main()
 
   int rowCount = dayNum - 1;
 
-  cout << "Sun Mon Tue Wed Thu Fri Sat" << endl;
+  cout << "Sun Mon Tue Wed Thr Fri Sat" << endl;
   for (int i = 1; i < dayNum; i++)
   {
     if (i == 1)
@@ -50,4 +50,5 @@ int main()
     }
     rowCount++;
   }
+  cout << endl;
 }
