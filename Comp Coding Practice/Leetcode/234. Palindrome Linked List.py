@@ -19,7 +19,6 @@ class Solution:
         while curr:
             list1.append(curr.val)
             curr = curr.next
-        print(list1)
         if list1 == list1[::-1]:
             print("True")
             return True
