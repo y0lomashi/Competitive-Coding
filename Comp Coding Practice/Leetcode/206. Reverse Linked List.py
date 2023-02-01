@@ -30,5 +30,10 @@ class Solution:
 
 # ! for testing
 # Nodes put into list format
-p = Solution()
-p.reverseList(head=ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))) 
+list1 = ListNode(1, ListNode(2, ListNode(4)))
+
+# * print the linked list
+head = Solution().reverseList(list1)
+while head:
+    print(head.val)
+    head = head.next
