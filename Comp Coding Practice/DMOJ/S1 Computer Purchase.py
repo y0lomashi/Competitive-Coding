@@ -5,6 +5,7 @@
 # if there is a tie, return them in alphabetical order
 
 # ! not finished
+import sys
 
 computers = {}
 r, s, d = 0, 0, 0
@@ -23,10 +24,10 @@ except IndexError:
     pass
 
 try:
-    print(computers[0][0])
+    sys.stdout.write(computers[0][0])
 except IndexError:
     pass
 try:
-    print(computers[1][0])
+    sys.stdout.write("\n" + computers[1][0])
 except IndexError:
     pass
