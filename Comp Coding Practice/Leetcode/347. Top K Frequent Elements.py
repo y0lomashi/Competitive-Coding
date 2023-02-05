@@ -1,5 +1,6 @@
 # Leetcode 347. Top K Frequent Elements
 # https://leetcode.com/problems/top-k-frequent-elements/
+# * first medium problem solved by myself beats 21.25% of python3 submissions
 
 from typing import List
 
