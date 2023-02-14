@@ -1,21 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ! not finished
 
 int main()
 {
     cin.sync_with_stdio(0);
     cin.tie(0);
-    // code here
-    map<string, string> together;
-    map<string, string> apart;
+    unordered_map<string, vector<string>> together;
+    unordered_map<string, vector<string>> apart;
+
+    grouped[a][b]
+
     int x; cin >> x;
     string temp1, temp2;
     for(int i = 0; i < x; i++){
         // putting pairs into hashmap
         cin >> temp1 >> temp2;
-        together.insert({temp1, temp2});
+        together[temp1].push_back(temp2);
+        // together.insert({temp1, temp2});
     }
     int y; cin >> y;
     for(int j = 0; j < y; j++){
@@ -60,11 +62,7 @@ int main()
             }
         }
     }
-    cout << endl;
-    for(const auto& elem : together)
-    {
-        std::cout << elem.first << " " << elem.second<< "\n";
-    }
-    // cout << infractions << endl;
+
+    cout << infractions << endl;
 
 }

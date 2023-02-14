@@ -1,33 +1,42 @@
-# Determine which computer is the best value for money
-# Based on performance metric 2R + 3S + D
-# R = RAM, S = Speed, D = Drive
-# Return the best 2 computers in order of best performance
-# if there is a tie, return them in alphabetical order
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <unordered_map>
 
-# ! not finished
-import sys
+// ! not finished
 
-computers = {}
-r, s, d = 0, 0, 0
-for _ in range(int(input())):
-    name, r, s, d = input().split()
-    computers[name] = 2 * int(r) + 3 * int(s) + int(d)
+using namespace std;
 
-# Sort by performance metric
-computers = sorted(computers.items(), key=lambda x: x[1], reverse=True)
-
-# Sort by alphabetical order if performance metric is the same
-try:
-    if computers[0][1] == computers[1][1]:
-        computers = sorted(computers, key=lambda x: x[0])
-except IndexError:
-    pass
-
-try:
-    sys.stdout.write(computers[0][0])
-except IndexError:
-    pass
-try:
-    sys.stdout.write("\n" + computers[1][0])
-except IndexError:
-    pass
+int main() {
+    int n;
+    cin >> n;
+    unordered_map<string, int> computers;
+    vector<pair<string, int>> res;
+    for (int i = 0; i < n; i++) {
+        string name;
+        int r, s, d;
+        cin >> name >> r >> s >> d;
+        computers[name] = 2 * r + 3 * s + d;
+    }
+    // Sort by performance metric
+    for (auto it = computers.begin(); it != computers.end(); it++) {
+        res.push_back(make_pair(it->first, it->second));
+    }
+    sort(res.begin(), res.end(), [](pair<string, int> a, pair<string, int> b) {
+        return a.second > b.second;
+    });
+    // Sort by alphabetical order if performance metric is the same
+    if (res.size() > 1 && res[0].second == res[1].second) {
+        sort(res.begin(), res.end(), [](pair<string, int> a, pair<string, int> b) {
+            return a.first < b.first;
+        });
+    }
+    if (res.size() > 0) {
+        cout << res[0].first << endl;
+    }
+    if (res.size() > 1) {
+        cout << res[1].first << endl;
+    }
+    return 0;
+}
