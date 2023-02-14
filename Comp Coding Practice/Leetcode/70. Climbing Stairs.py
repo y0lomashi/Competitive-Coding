@@ -1,6 +1,6 @@
 # Leetcode 70. Climbing Stairs
 # https://leetcode.com/problems/climbing-stairs/
-# * Dynamic programming, similar to fiboanacci
+# * Dynamic programming
 
 
 class Solution:
