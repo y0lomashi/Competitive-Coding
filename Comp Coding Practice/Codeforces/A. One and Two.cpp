@@ -4,6 +4,9 @@ using namespace std;
 #define ll long long
 #define SZ(x) int(x.size())
 
+// bad solution maybe just loop through count 2's if odd then -1 
+// then loop through to find where the middle of the 2's are
+
 int main()
 {
     cin.sync_with_stdio(0);
