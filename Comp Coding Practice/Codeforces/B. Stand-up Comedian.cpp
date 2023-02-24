@@ -8,8 +8,7 @@ using namespace std;
 
 // * Greedy Method, Math method much better
 // this code is funny
-// ! oh it tle on test 3
-
+// ! IT WORKS
 
 int main()
 {
