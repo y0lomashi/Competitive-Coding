@@ -4,6 +4,7 @@
 "python.linting.enabled": true,
 "files.associations": {
     "oneSQL": "html",
+    "*.cpp": "cpp",
     "__bit_reference": "cpp",
     "__hash_table": "cpp",
     "__string": "cpp",
@@ -17,7 +18,12 @@
     "ostream": "cpp",
     "regex": "cpp",
     "iosfwd": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "chrono": "cpp",
+    "limits": "cpp",
+    "random": "cpp",
+    "valarray": "cpp",
+    "algorithm": "cpp"
 },
 "C_Cpp.errorSquiggles": "disabled"
 }
