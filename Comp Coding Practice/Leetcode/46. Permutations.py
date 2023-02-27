@@ -30,7 +30,6 @@ class Solution:
         return res
 
 
-
 # ! for testing
 nums = [1, 2, 3]
 print(Solution().permute(nums))
