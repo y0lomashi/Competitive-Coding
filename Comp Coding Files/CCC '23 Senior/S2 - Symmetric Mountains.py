@@ -17,8 +17,6 @@ for i in range(n):
         lT, rT = (n - 1) // 2 - 1, (n - 1) // 2 + 1
         calc = 0
         while lT > l or rT < r:
-            if (lT, rT) in calcs:
-                break
             value = abs(mountains[lT] - mountains[rT])
             calc += value
             if calc > asym:
