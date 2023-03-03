@@ -1,8 +1,8 @@
 {
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
-"python.linting.enabled": true,
-"files.associations": {
+  "python.linting.enabled": true,
+  "files.associations": {
     "oneSQL": "html",
     "*.cpp": "cpp",
     "__bit_reference": "cpp",
@@ -23,7 +23,17 @@
     "limits": "cpp",
     "random": "cpp",
     "valarray": "cpp",
-    "algorithm": "cpp"
-},
-"C_Cpp.errorSquiggles": "disabled"
+    "algorithm": "cpp",
+    "deque": "cpp",
+    "functional": "cpp",
+    "list": "cpp",
+    "vector": "cpp",
+    "__split_buffer": "cpp",
+    "array": "cpp",
+    "filesystem": "cpp",
+    "forward_list": "cpp",
+    "initializer_list": "cpp",
+    "span": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
