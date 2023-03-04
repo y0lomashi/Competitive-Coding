@@ -26,7 +26,6 @@ int main()
     {
         int n; cin >> n;
         string s; cin >> s;
-        cout << fb.find(s) << endl;
         cout << (fb.find(s) != string::npos? "YES":"NO") << endl;
     }
     return 0;
