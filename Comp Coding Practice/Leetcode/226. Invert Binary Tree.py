@@ -25,7 +25,7 @@ class Solution:
 
         self.invertTree(root.left)
         self.invertTree(root.right)
-        print (root.val)
+        print(root.val)
         return root
 
 
