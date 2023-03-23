@@ -26,13 +26,10 @@ class Solution:
             if val >= 10:
                 val -= 10
                 carry += 1
-            
-                
-            dummy.next = ListNode(val)       
+            dummy.next = ListNode(val)     
             dummy = dummy.next
-                
         return res.next
-    
+
 
 # ! for testing
 l1 = ListNode(2, ListNode(4, ListNode(9)))
